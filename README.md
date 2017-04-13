@@ -1,4 +1,4 @@
-![alt tag(https://raw.githubusercontent.com/Kodingtorial/seri-tutorial-angularjs/master/kodingtorial.png)](http://www.kodingtorial.com)
+[![alt tag](https://raw.githubusercontent.com/Kodingtorial/seri-tutorial-angularjs/master/kodingtorial.png)](http://www.kodingtorial.com)
 
 # Seri tutorial Angularjs
 Angularjs adalah sebuah Framework MVC Javascript open source yang dibuat oleh Google. Saat ini Angularjs sudah banyak digunakan untuk mengembangkan Single Page Application (SPA). 
