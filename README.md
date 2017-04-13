@@ -13,5 +13,8 @@ Untuk memulai mengikuti tutorial ini, diharapkan anda sudah menguasai pemorgrama
 
 Untuk menjalankan contoh source code, anda harus memiliki web browser seperti chrome, firefox, safari dll di komputer anda
 
+## Daftar tutorial
+
+* Seri Tutorial AngularJS - Pengantar ([Lihat artikel](http://www.kodingtorial.com/2017/04/seri-tutorial-angularjs-pengantar.html) - [Lihat Demo]http://demo.kodingtorial.com/seri-tutorial-angularjs/tutorial%201/latihan1.html)
 
 [Kodingtorial]: <http://www.kodingtorial.com>
