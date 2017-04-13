@@ -1,0 +1,23 @@
+<!doctype html>
+<!-- mendefinisikan aplikasi angularjs pada dengan menggunakan directive ng-app pada tag html -->
+<html ng-app>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    </head>
+
+    <body>
+        Contoh aplikasi ini merupakan source code penyerta dari seri tutorial angularjs di blog <a href="http://www.kodingtorial.com" style="text-decoration: none; color: blue"><b>Kodingtorial</b></a>
+        <br/>
+        Artikel tutorial contoh aplikasi ini dapat dilihat <a href="http://www.kodingtorial.com/2017/04/seri-tutorial-angularjs-pengantar.html" style="text-decoration: none;">disini</a>
+        <br/>
+        <br/>
+        <!-- menampilkan expression pada brower dengan menggunakan double braces ( {{ expression }} ) -->
+        {{"Aplikasi AngularJS pertamaku"}}
+        
+        <!-- binding model "nama" ke input element menggunakan directive ng-model -->
+        <p>Nama: <input type="text" ng-model="nama" /></p>
+        Hi, Nama Saya {{nama}}
+
+    </body>
+</html>
+    
