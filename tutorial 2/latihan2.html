@@ -1,0 +1,45 @@
+<!doctype html>
+<!-- mendefinisikan aplikasi angularjs pada dengan menggunakan directive ng-app pada tag html -->
+<html ng-app>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    </head>
+
+    <body>
+        Contoh aplikasi ini merupakan source code penyerta dari seri tutorial angularjs di blog <a href="http://www.kodingtorial.com" style="text-decoration: none; color: blue"><b>Kodingtorial</b></a>
+        <br/>
+        Artikel tutorial contoh aplikasi ini dapat dilihat <a href="http://www.kodingtorial.com/2017/04/seri-tutorial-angularjs-pengantar.html" style="text-decoration: none;">disini</a>
+        <br/>
+        <br/>
+        <!-- mendefinisikan array menggunakan ng-init -->
+        <div ng-init="arrBuah = ['apel', 'pisang', 'mangga', 'durian']">
+            Duplikasi elemen list item
+            <ul>
+                <li ng-repeat="buah in arrBuah" ng-bind="buah"></li>
+            </ul>
+
+            Duplikasi elemen table row
+            <table border="1">
+                <!-- menampilkan data secara berulan menggunakan ng-repeat -->
+                <tr ng-repeat="buah in arrBuah">
+                    <td>{{buah}}</td>
+                </tr>
+            </table>
+
+            <p>
+            Menampilkan object didalam array
+            <table border="1">
+                <tr><td>Nama Framework</td><td>Bahasa Pemrograman</td></tr>
+                <!-- menampilkan data secara berulan menggunakan ng-repeat -->
+                <tr ng-repeat="framework in [{name:'AngularJS', language:'Javascript'}, 
+                    {name:'Django', language:'Python'}, 
+                    {name:'Laravel', language:'PHP'}]">
+                    <td>{{framework.name}}</td>
+                    <td>{{framework.language}}</td>
+                </tr>
+            </table>
+            </p>
+        </div>
+    </body>
+</html>
+    
