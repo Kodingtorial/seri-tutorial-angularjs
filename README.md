@@ -17,5 +17,6 @@ Untuk menjalankan contoh source code, anda harus memiliki web browser seperti ch
 
 * Pengantar ([Lihat artikel](http://www.kodingtorial.com/2017/04/seri-tutorial-angularjs-pengantar.html) - [Lihat Demo Aplikasi](http://demo.kodingtorial.com/seri-tutorial-angularjs/tutorial%201/latihan1.html))
 * Perulangan data dengan ng-repeat ([Lihat artikel](http://www.kodingtorial.com/2017/04/seri-tutorial-angularjs-perulangan.html) - [Lihat Demo Aplikasi](http://demo.kodingtorial.com/seri-tutorial-angularjs/tutorial%202/latihan2.html))
+* Filter ([Lihat artikel](http://www.kodingtorial.com/2017/04/seri-tutorial-angularjs-filter.html) - [Lihat Demo Aplikasi](http://demo.kodingtorial.com/seri-tutorial-angularjs/tutorial%203/latihan3.html))
 
 [Kodingtorial]: <http://www.kodingtorial.com>
