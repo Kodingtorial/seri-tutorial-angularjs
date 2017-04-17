@@ -1,0 +1,59 @@
+<!doctype html>
+<html ng-app>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    </head>
+
+    <body>
+        <p>
+            <b>Filter currency</b><br/>
+            Saya memiliki uang sebanyak {{ 20000 | currency}}<br/>
+            Saya memiliki uang sebanyak {{ 20000 | currency: 'Rp'}}
+        </p>
+
+        <p>
+            <b>Filter date</b><br/>
+            Hari ini tanggal {{ '2017-02-22' | date:'fullDate' }}<br/>
+            Hari ini tanggal {{ '2017-02-22' | date:'medium' }}<br/>
+            Hari ini tanggal {{ '2017-02-22' | date:'dd-MMM-yyyy' }}<br/>
+            Hari ini tanggal {{ '2017-02-22' | date:'dd-MM-yyyy' }}<br/>
+        </p>
+
+        <p>
+            <b>Filter lowercase</b><br/>
+            Nama saya {{'Iwan Kurniawan' | lowercase}}
+        </p>
+
+        <p>
+            <b>Filter uppercase</b><br/>
+            Nama saya {{'Iwan Kurniawan' | uppercase}}
+        </p>
+
+        <p>
+            <b>Filter JSON</b><br/>
+            <pre>{{ {Nama: 'Iwan Kurniawan', Usia: 30} }}</pre>
+            <pre>{{ {Nama: 'Iwan Kurniawan', Usia: 30} | json}}</pre>
+            <pre>{{ {Nama: 'Iwan Kurniawan', Usia: 30} | json:8}}</pre>
+        </p>
+
+        <p id="paragraph" ng-init="list = [ {kota:'Tokyo', negara:'Jepang'}, 
+                        {kota:'Kuala Lumpur', negara:'Malaysia'},
+                        {kota:'Manila', negara:'Philipine'}, 
+                        {kota:'Jakarta', negara:'Indonesia'}, 
+                        {kota:'Seoul', negara:'Korea Selatan'}]" >
+            <input type="text" ng-model="search" placeholder="search" />
+            <input type="number" ng-model="limit" placeholder="limit" />
+            <br/>
+            <table border="1">
+                <tr>
+                    <td><a href="#paragraph" ng-click="sorting = 'kota'">Kota</a></td>
+                    <td><a href="#paragraph" ng-click="sorting = 'negara'">Negara</a></td>
+                </tr>
+                <tr ng-repeat="item in list | filter: search| limitTo: limit | orderBy : sorting">
+                    <td>{{item.kota}}</td><td>{{item.negara}}</td>
+                </tr>
+            </table>
+        </p>
+    </body>
+</html>
+    
